@@ -34,11 +34,11 @@ function show(data) {
         clone.querySelector('.time').textContent = `${customer.time.day}/${customer.time.month}/${customer.time.year}`
 
         if (customer.importance >= 70) {
-            dot.style.backgroundColor = "#EE5164"
+            dot.style.backgroundColor = "#FF6961"
         } else if (customer.importance < 70 && customer.importance > 40) {
-            dot.style.backgroundColor = "blue"
+            dot.style.backgroundColor = "#fdfd96"
         } else {
-            dot.style.backgroundColor = "#84fab0";
+            dot.style.backgroundColor = "#77DDAA";
         }
 
         linkMore.addEventListener('click', function () {
@@ -50,7 +50,7 @@ function show(data) {
         });
 
         buttonRemove.addEventListener('click', function () {
-
+            
             more.parentElement.remove();
         });
 
