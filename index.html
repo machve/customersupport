@@ -7,9 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Customer support</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
+
+    <header>
+        <h1 class="welcome">Customer complaints</h1>
+    </header>
     <main>
 
 
@@ -17,14 +25,25 @@
         <template class="customer-template">
             <div class="customers">
 
-                <h1 class="customer-name">customer-name</h1>
-                <h3 class="place">place</h2>
-                    <h3 class="message"></h3>
-                    <button class="details-button">details</button>
-                    <button class="remove-button">Remove</button>
+                <div class="arrow collapsed">
 
-                    <p class="full hide" full>full</p>
+                    <span class="arrow__lower"></span>
+                </div>
+                <div class="dot"></div>
 
+
+                <a href="#more-info" class="details-link">
+                    <h1 class="message msg.icn"></h1>
+                </a>
+                <div class="div full-info-div hide">
+                    <p class="customer-name">customer-name</p>
+                    <p class="place">place</p>
+                    <p class="time">time</p>
+                    <p class="message-text" full>full</p>
+                    <button class="remove-button" data-title="remove">Remove</button>
+                </div>
+
+               
 
             </div>
 

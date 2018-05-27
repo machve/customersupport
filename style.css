@@ -1,3 +1,143 @@
 .hide {
     display: none;
+
+}
+
+  
+body,
+h1 {
+    color: black;
+    /* font-family: 'Varela Round', sans-serif; */
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.arrow {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -2px;
+}
+
+
+.arrow__lower:before,
+.arrow__lower:after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: -9px;
+    width: 12px;
+    height: 4px;
+    background: #fecdd3;
+    border-radius: 2px;
+    transition: all 0.5s;
+}
+
+
+.arrow__lower:before,
+.arrow__lower:after {
+    top: 6px;
+    transform: rotate(45deg);
+}
+
+.arrow__lower:after {
+    right: inherit;
+    left: -9px;
+    transform: rotate(-45deg);
+}
+
+.collapsed .arrow__lower:before,
+.collapsed .arrow__lower:after {
+    top: 0px;
+    transform: rotate(-45deg);
+}
+
+.collapsed .arrow__lower:after {
+    transform: rotate(45deg);
+}
+
+header {
+    background-color: #fecdd3;
+}
+
+
+main {
+    height: 100vw;
+    margin: 0 auto;
+    padding: 0 74px;
+}
+
+
+div.customers {
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    border-bottom: 1px solid #DFE0E6;
+    width: 60%;
+    align-content: center;
+    transition:all 1s ease;
+}
+.extra-padding{
+    padding:20px 10px 0 10px !important;
+}
+
+.welcome {
+    margin: 0 0 24px;
+    padding: 7%;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+
+.details-button {
+    background-color: #84fab0;
+    padding: 11px;
+    width: 20em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.remove-button {
+    background-color: #EE5164;
+    padding: 11px;
+    width: 20em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1.message {
+    font-size: 24px;
+    padding: 20px 0 40px 60px;
+    margin: 0;
+    line-height: 30px;
+   
+}
+
+
+
+
+
+p.customer-name,
+p.place,
+p.time {
+    font-size: 10px;
+    color: gray;
+}
+
+.dot {
+    left: 90%;
+    top: 46px;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
